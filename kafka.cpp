@@ -122,7 +122,7 @@ uint32_t	sent = 0;
 				payload << ",";
 			}
 			payload << "\"" << (*dit)->getName();
-			payload << "\" : " << (*dit)->getData().toString() << "\"";
+			payload << "\" : \"" << (*dit)->getData().toString() << "\"";
 		
 		}
 		payload << "}";
