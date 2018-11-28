@@ -31,7 +31,11 @@ using namespace rapidjson;
 				"\"default\": \"localhost:9092,kafka.local:9092\" }, " \
 			"\"topic\": { " \
 				"\"description\": \"The topic to send reading data on\", " \
-				"\"type\": \"string\", \"default\": \"FogLAMP\" } "
+				"\"type\": \"string\", \"default\": \"FogLAMP\" }, " \
+			"\"source\": { " \
+				"\"description\": \"The source of data to send\", " \
+				"\"type\": \"enumeration\", \"default\": \"readings\", " \
+				"\"options\" : [\"readings\",\"statistics\"] }" \
 
 #define KAFKA_PLUGIN_DESC "\"plugin\": {\"description\": \"Kafka North\", \"type\": \"string\", \"default\": \"" PLUGIN_NAME "\", \"readonly\": \"true\"}"
 
