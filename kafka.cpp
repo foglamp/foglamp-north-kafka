@@ -9,6 +9,7 @@
  */
 #include <kafka.h>
 #include <logger.h>
+#include <unistd.h>
 
 using namespace	std;
 
@@ -77,11 +78,12 @@ char	errstr[512];
  */
 Kafka::~Kafka()
 {
-	m_running = false;
-	rd_kafka_flush(m_rk, 10000);
+	rd_kafka_flush(m_rk, 1000);
 	rd_kafka_topic_destroy(m_rkt);
+	m_running = false;
 	rd_kafka_destroy(m_rk);
 	m_thread->join();
+	delete m_thread;
 }
 
 /**
@@ -92,7 +94,8 @@ Kafka::pollThread()
 {
 	while (m_running)
 	{
-		rd_kafka_poll(m_rk, 500);
+		rd_kafka_poll(m_rk, 0);
+		usleep(100);
 	}
 }
 
