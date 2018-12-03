@@ -57,7 +57,7 @@ link_directories(${FOGLAMP_LIB_DIRS} /usr/local/lib)
 # Create shared library
 add_library(${PROJECT_NAME} SHARED ${SOURCES})
 
-target_link_libraries(${PROJECT_NAME} -lrdkafka)
+target_link_libraries(${PROJECT_NAME} librdkafka.a)
 # Add FogLAMP library names
 target_link_libraries(${PROJECT_NAME} ${NEEDED_FOGLAMP_LIBS})
 
