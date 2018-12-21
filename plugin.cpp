@@ -28,16 +28,22 @@ using namespace rapidjson;
 #define PLUGIN_DEFAULT_CONFIG "\"brokers\": { " \
 				"\"description\": \"The bootstrap broker list to retrieve full Kafka brokers\", " \
 				"\"type\": \"string\", " \
+				"\"order\": \"1\", " \
+				"\"displayName\": \"Bootstrap Brokers\", " \
 				"\"default\": \"localhost:9092,kafka.local:9092\" }, " \
 			"\"topic\": { " \
 				"\"description\": \"The topic to send reading data on\", " \
+				"\"order\": \"2\", " \
+				"\"displayName\": \"Kafka Topic\", " \
 				"\"type\": \"string\", \"default\": \"FogLAMP\" }, " \
 			"\"source\": { " \
 				"\"description\": \"The source of data to send\", " \
 				"\"type\": \"enumeration\", \"default\": \"readings\", " \
+				"\"order\": \"3\", " \
+				"\"displayName\": \"Data Source\", " \
 				"\"options\" : [\"readings\",\"statistics\"] }" \
 
-#define KAFKA_PLUGIN_DESC "\"plugin\": {\"description\": \"Kafka North\", \"type\": \"string\", \"default\": \"" PLUGIN_NAME "\", \"readonly\": \"true\"}"
+#define KAFKA_PLUGIN_DESC "\"plugin\": {\"description\": \"Simple plugin to send data to a Kafka topic\", \"type\": \"string\", \"default\": \"" PLUGIN_NAME "\", \"readonly\": \"true\"}"
 
 #define PLUGIN_DEFAULT_CONFIG_INFO "{" KAFKA_PLUGIN_DESC ", " PLUGIN_DEFAULT_CONFIG "}"
 
