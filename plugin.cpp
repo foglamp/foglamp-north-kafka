@@ -41,7 +41,7 @@ using namespace rapidjson;
 				"\"type\": \"enumeration\", \"default\": \"readings\", " \
 				"\"order\": \"3\", " \
 				"\"displayName\": \"Data Source\", " \
-				"\"options\" : [\"readings\",\"statistics\"] }" \
+				"\"options\" : [\"readings\",\"statistics\"] }"
 
 #define KAFKA_PLUGIN_DESC "\"plugin\": {\"description\": \"Simple plugin to send data to a Kafka topic\", \"type\": \"string\", \"default\": \"" PLUGIN_NAME "\", \"readonly\": \"true\"}"
 
