@@ -106,12 +106,10 @@ Run the make_deb command after compiling the plugin:
 .. code-block:: console
 
   $ ./make_deb help
-  make_deb {x86|arm} [help|clean|cleanall]
-  This script is used to create the Debian package of FoglAMP C++ 'kafka' north plugin
+  make_deb [help|clean|cleanall]
+  This script is used to create the Debian package of FogLAMP C++ 'kafka' north plugin
   Arguments:
    help     - Display this help text
-   x86      - Build an x86_64 package
-   arm      - Build an armv7l package
    clean    - Remove all the old versions saved in format .XXXX
    cleanall - Remove all the versions, including the last one
   $
@@ -132,7 +130,7 @@ Finally, run the ``make_deb`` command:
 
    Populating the package and updating version file...Done.
    Building the new package...
-   dpkg-deb: building package 'foglamp-filter-scale' in 'foglamp-north-kafka-1.0.0-x86_64.deb'.
+   dpkg-deb: building package 'foglamp-north-kafka' in 'foglamp-north-kafka-1.0.0-x86_64.deb'.
    Building Complete.
    $
 
