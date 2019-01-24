@@ -17,6 +17,7 @@
 #include <iostream>
 #include <kafka.h>
 #include <config_category.h>
+#include <version.h>
 
 using namespace std;
 using namespace rapidjson;
@@ -57,7 +58,7 @@ extern "C" {
  */
 static PLUGIN_INFORMATION info = {
 	PLUGIN_NAME,			// Name
-	"1.0.0",			// Version
+	VERSION,			// Version
 	0,				// Flags
 	PLUGIN_TYPE_NORTH,		// Type
 	"1.0.0",			// Interface version
