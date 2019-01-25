@@ -30,7 +30,7 @@ and installed before the plugin can be built.
 
   $ git clone https://github.com/edenhill/librdkafka.git
   $ cd librdkafka
-  $ ./confgure
+  $ ./configure
   $ make
   $ sudo make isntall
 
