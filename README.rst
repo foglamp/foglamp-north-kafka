@@ -32,7 +32,7 @@ and installed before the plugin can be built.
   $ cd librdkafka
   $ ./configure
   $ make
-  $ sudo make isntall
+  $ sudo make install
 
 To build FogLAMP "Kafka" C++ north plugin:
 
