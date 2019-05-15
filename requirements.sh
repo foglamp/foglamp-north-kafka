@@ -29,3 +29,5 @@ cd librdkafka
 ./configure
 make
 sudo make install
+cd ..
+rm -rf librdkafka
