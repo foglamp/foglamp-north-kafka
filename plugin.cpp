@@ -1,5 +1,5 @@
 /*
- * FogLAMP Kafka north plugin.
+ * Fledge Kafka north plugin.
  *
  * Copyright (c) 2018 Dianomic Systems
  *
@@ -36,7 +36,7 @@ using namespace rapidjson;
 				"\"description\": \"The topic to send reading data on\", " \
 				"\"order\": \"2\", " \
 				"\"displayName\": \"Kafka Topic\", " \
-				"\"type\": \"string\", \"default\": \"FogLAMP\" }, " \
+				"\"type\": \"string\", \"default\": \"Fledge\" }, " \
 			"\"source\": { " \
 				"\"description\": \"The source of data to send\", " \
 				"\"type\": \"enumeration\", \"default\": \"readings\", " \

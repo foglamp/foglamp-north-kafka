@@ -1,5 +1,5 @@
 /*
- * FogLAMP Kafka north plugin.
+ * Fledge Kafka north plugin.
  *
  * Copyright (c) 2018 Dianomic Systems
  *
